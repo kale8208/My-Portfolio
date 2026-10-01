@@ -1,0 +1,304 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+    background-color: #f0f4f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Main Headings */
+h1 {
+    text-align: center;
+    color: #123b66;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #0077b5;
+}
+
+/* Navigation Bar */
+nav {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #0077b5;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #005582;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px auto;
+    max-width: 900px;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.intro h2 {
+    font-size: 32px;
+    color: #123b66;
+}
+
+.intro h3 {
+    color: #0077b5;
+}
+
+/* Content Cards */
+.about, .skills, .social-links,
+.experience, .education, .project {
+    background-color: white;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Paragraph Styling */
+.about p, .skills p, .experience p,
+.education p, .project p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Social Links */
+.social-links {
+    text-align: center;
+}
+
+.social-links a {
+    display: inline-block;
+    background-color: #0077b5;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #005582;
+}
+
+/* Card Headings */
+.experience h2, .education h2,
+.project h2 {
+    color: #0077b5;
+}
+
+/* Back to Home Link */
+body > a {
+    display: block;
+    width: fit-content;
+    margin: 25px auto;
+    padding: 12px 22px;
+    background-color: #0077b5;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+body > a:hover {
+    background-color: #005582;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .intro h2 {
+        font-size: 26px;
+    }
+
+    nav a {
+        padding: 10px 12px;
+        margin: 3px;
+    }
+
+    .about, .skills, .social-links,
+    .experience, .education, .project {
+        padding: 18px;
+        margin: 18px auto;
+    }
+}
+.resume {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.resume a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+}
+
+.resume a:hover {
+    background-color: #555;
+}
+.contact {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact h2 {
+    color: #0077b6;
+}
+
+.contact a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+}
+
+.contact a:hover {
+    background-color: #555;
+}
+.project-card a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 18px;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+}
+
+.project-card a:hover {
+    background-color: #555;
+}
+.pages {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.pages h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pages a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+}
+.project-card {
+    background-color: white;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.project-card h2 {
+    color: #0077b5;
+}
+
+.project-card p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.project-card a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project-card a:hover {
+    background-color: #555;
+}
+.project-card img {
+    width: 100%;
+    max-width: 300px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
